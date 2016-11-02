@@ -1,0 +1,33 @@
+{
+  "name": "ngsa",
+  "version": "1.0.0",
+  "description": "template angular",
+  "scripts": {
+    "dist": "rm -rf dist; webpack --config webpack.config.prod.js",
+    "dev": "webpack-dev-server --content-base build/ --history-api-fallback --hot --inline"
+  },
+  "author": "David <1457896625@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.6",
+    "angular-route": "^1.5.6",
+    "splash-screen": "^3.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.22.0",
+    "ng-annotate-loader": "^0.1.0",
+    "node-sass": "^3.10.1",
+    "postcss-loader": "^0.9.1",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
