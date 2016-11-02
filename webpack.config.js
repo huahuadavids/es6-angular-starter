@@ -2,6 +2,7 @@ var path          = require('path');
 var webpack       = require('webpack');
 var autoprefixer  = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
 var src = __dirname + "/src/";
 module.exports = {
@@ -71,6 +72,7 @@ module.exports = {
       template: './index.html_vm',
       favicon: './src/assets/favicon.ico',
       hash: false
-    })
+    }),
+    new OpenBrowserPlugin({url: "http://localhost:8080"})
   ]
 };

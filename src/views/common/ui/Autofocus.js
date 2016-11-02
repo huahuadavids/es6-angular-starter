@@ -11,22 +11,22 @@ import FeatureBase from 'lib/FeatureBase';
 
 class Feature extends FeatureBase {
 
-    constructor() {
-        super('AutofocusModule');
-    }
+  constructor() {
+    super('AutofocusModule');
+  }
 
-    _autoFocus() {
-        return {
-            restrict: 'A',
-            link: function($scope, element) {
-                element[0].focus();
-            }
-        };
-    }
+  _autoFocus() {
+    return {
+      restrict: 'A',
+      link: function ($scope, element) {
+        element[0].focus();
+      }
+    };
+  }
 
-    execute() {
-        this.directive('autofocus', this._autoFocus);
-    }
+  execute() {
+    this.directive('autofocus', this._autoFocus);
+  }
 }
 
 export default Feature;

@@ -9,15 +9,16 @@
 
 class ServiceBase {
 
-    constructor(features, app) {
-        this.features = features;
-        this.app = app;
+  constructor(features, app) {
+    this.features = features;
+    this.app = app;
 
-        this.factory = app.factory;
-        this.service = app.service;
-    }
+    this.factory = app.factory;
+    this.service = app.service;
+  }
 
-    execute() {}
+  execute() {
+  }
 }
 
 export default ServiceBase;

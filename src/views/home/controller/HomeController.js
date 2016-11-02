@@ -8,7 +8,6 @@
 
 class HomeController {
 
-  /*@ngInject*/
   constructor($scope, HomeService) {
     this.$scope = $scope;
     this.HomeService = HomeService;
