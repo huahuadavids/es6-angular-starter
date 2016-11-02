@@ -5,9 +5,6 @@
  *  @date    Nov 1, 2016
  *
  */
-let a =[1,2];
-let b =[3,4];
-console.log([...a,b])
 require.ensure(['splash-screen/dist/splash.min.css', 'splash-screen'], function(require) {
 
     require('splash-screen/dist/splash.min.css').use();
